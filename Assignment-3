@@ -1,0 +1,28 @@
+//  * Assignment-3 (User Input)
+//  * step 1: create a class called Product
+//  * step 2: create a main method
+//  * step 3: declare variables: id, title, price, description, category
+//  * step 4: get user input for each variables
+//   * step 5: print the variables
+import java.util.Scanner;
+class Product {
+    public static void main(String[] args) {
+        int Id;
+        String Title,Price,Description,Catagory;
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter ID:");
+        Id=input.nextInt();
+        input.nextLine();
+        System.out.print("Enter Title:");
+        Title=input.nextLine();
+        System.out.print("Enter Price:");
+        Price=input.nextLine();
+        System.out.print("Enter Description:");
+        Description=input.nextLine();
+        System.out.print("Enter Catagory:");
+        Catagory=input.nextLine();
+        
+        System.out.printf("ID:%d\nTitle:%s\nPrice:%s\nDescription:%s\nCatagory:%s",Id,Title,Price,Description,Catagory);
+       
+    }
+}
