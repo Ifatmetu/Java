@@ -1,0 +1,25 @@
+//Assignment-2(Variable and data type)
+// Creat a class called product
+// Creat a main Method
+// Declar variables:ID,Title,Price,Description,Catagory
+//Assign the following data in the main method and print the data:
+// 101,
+// iphone15,
+// 1895uros,perfect product with best image quality
+// phone,
+class Product {
+    public static void main(String[] args) {
+        int ID=101;
+        String  Title,Price,Description,Catagory;
+        Title="iphone15";
+        Price="1895uros";
+        Description="perfect product with best image quality";
+        Catagory="phone";
+        
+        System.out.print("ID:"+ID +"\n");
+        System.out.print("Title:"+Title +"\n");
+        System.out.print("Price:"+Price +"\n");
+        System.out.print("Descriptio:"+Description +"\n");
+        System.out.print("Catagory:"+Catagory +"\n");
+    }
+}
