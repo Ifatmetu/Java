@@ -1,0 +1,37 @@
+// switch assignment: call center
+// if user select option 1 then set language bengali
+// if user select option 2 then set language hindi
+// if user select option 3 then set language urdu
+// for any other option set language english
+ // get the OPTION from user
+    // use switch, case, break and default
+
+    // Selected language is Bengali
+    // Selected language is Hindi
+    // Selected language is Urdu
+    // Selected language is English
+import java.util.Scanner;
+
+public class Assignment8 {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+      System.out.print("Select Language(1:Bangali,2.Hindi,3.Urdu,4.English):");
+      int Language=input.nextInt();
+      switch(Language){
+          case 1:
+              System.out.print("Selected language is Bengali");
+              break;
+          case 2:
+              System.out.print("Selected language is Hindi");
+              break;
+          case 3:
+              System.out.print("Selected language is Urdu");
+              break;
+         default:
+             System.out.print("Selected language is English");
+         
+          
+      }
+      
+  }
+}
