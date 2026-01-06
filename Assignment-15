@@ -1,0 +1,40 @@
+// 1. generate and print armstrong numbers from m-n 
+// 2. count and print number of armstrong numbers
+import java.util.Scanner;
+public class Assignment15 {
+   public static void main(String[] args) {
+    try (Scanner input = new Scanner(System.in)) {
+      System.out.print("start number: ");
+      int m = input.nextInt();
+
+      System.out.print("end number: ");
+      int n = input.nextInt();
+      
+      int totalArmstrongNumber=0;
+      
+      for(int i=m;i<=n;i++){
+         int temp=i;
+         int c=0;
+         while(temp!=0){//counting number of digits in i
+             temp=temp/10;
+             c++;
+         }
+         temp=i;
+         int result=0;
+         while(temp!=0){
+             int rem=temp%10;
+             result = result + (int)Math.pow(rem, c);
+             temp=temp/10;
+         }
+         if(result==i){
+             totalArmstrongNumber++;
+             System.out.println(i);
+         }
+         
+      }
+
+    
+     System.out.println("Total armstrong numbers : "+totalArmstrongNumber);
+    }
+  }
+}
