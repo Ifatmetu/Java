@@ -1,0 +1,19 @@
+// print sum of odd numbers from m-n
+import java.util.Scanner;
+class Assignment12{
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        
+        System.out.println("Enter value of m:");
+        int m=input.nextInt();
+        System.out.println("Enter value of n:");
+        int n=input.nextInt();
+        int result=0;
+        for(int i=m;i<=n;i++){
+            if(i%2!=0){
+            result=result+i;
+            }
+        }
+        System.out.print(result);
+    }
+}
